@@ -1,9 +1,10 @@
-## Front Page Content
+---
+title: "About"
+date: 2017-07-24T21:22:03+12:00
+---
 
-This website is powered by [GitLab Pages](https://about.gitlab.com/features/pages/)
-/ [Hugo](https://gohugo.io) and can be built in under 1 minute.
-Literally. It uses the `beautifulhugo` theme which supports content on your front page.
-Edit `/content/_index.md` to change what appears here. Delete `/content/_index.md`
-if you don't want any content here.
+The Mainland Big Band is a very experienced dance band with a long history of music-making in Canterbury. With more than 409 years’ experience, the Band is well-equipped to help you plan a programme to suit your particular needs. 
 
-Head over to the [GitLab project](https://gitlab.com/pages/hugo) to get started.
+The dedicated team of up to 19 musicians rehearses weekly under the direction of a talented Musical Director, expanding its already comprehensive repertoire, and maintaining its performance standard at a high level. 
+
+The Band has performed regularly in many of the Working Men’s Clubs of Christchurch as well as for private weddings, receptions, and large formal, corporate dinner-dances for many years.
