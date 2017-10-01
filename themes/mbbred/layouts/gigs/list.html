@@ -1,0 +1,17 @@
+{{ define "main" }}
+    {{ .Content }}
+    
+    <section>
+    <h2>Upcoming gigs:</h2>
+    {{ range where .Data.Pages.ByDate.Reverse "Date" ">=" now }}
+        {{ partial "gig.html" . }}
+    {{ end }}
+    </section>
+
+    <section>
+    <h2>Previous gigs:</h2>
+    {{ range where .Data.Pages.ByDate.Reverse "Date" "<" now }}
+    {{ partial "gig.html" . }}
+    {{ end }}
+    </section>
+{{ end }}

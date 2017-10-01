@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>{{ .Site.Title }}: {{ .Title }}</title>
+
+    <style>
+        .logo {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            height: 75%;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: black;
+            color: white;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .nav {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .nav, h1, h2 {
+            font-family: 'Limelight', cursive;
+            /*text-transform: uppercase;*/
+        }
+
+        .container {
+            padding-left: 1em;
+            padding-right: 1em;
+            background-color: white;
+        }
+
+        body {
+            background-color: #d83f39;
+            background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        }
+
+        a:hover {
+            color: #d83f39;
+        }
+
+        .footer * {
+            vertical-align: sub;
+        }
+
+        .footer .contact-us {
+            color: #d83f39;
+        }
+
+        .footer .material-icons {
+            font-size: 36px;
+        }
+        
+        body section {
+            margin-bottom: 2em;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/images/carousel/1.JPG" alt="MBB">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/carousel/2.JPG" alt="MBB">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/carousel/3.JPG" alt="MBB">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/carousel/4.JPG" alt="MBB">
+                    </div>
+                </div>
+            </div>
+            <img class="logo" src="/assets/images/logo.png" alt="Logo">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-pills nav-fill">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a class="nav-link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Next Gig</h2>
+                    <p class="card-text">Saturday Night<br>Cashmere Club<br>$10 entry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="footer float-right">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FMainlandBigBand%2F&width=62&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId"
+                        width="62" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true"></iframe>
+                <a class="contact-us" href="mailto:info@mainlandbigband.co.nz"><i class="material-icons md-48">email</i></a>
+            </p>
+        </div>
+    </div>
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+</html>
