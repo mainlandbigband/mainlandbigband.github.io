@@ -121,7 +121,9 @@
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Next Gig</h2>
-                    <p class="card-text">Saturday Night<br>Cashmere Club<br>$10 entry</p>
+                    {{ range first 1 (where (where .Site.Pages "Section" "=" "gigs").ByDate "Date" ">=" now) }}
+                    <p class="card-text">{{.Date.Format "January 2, 15:04"}}<br><a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a><br>${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }} entry<br>{{.Content}}</p>
+                    {{end}}
                 </div>
             </div>
         </div>

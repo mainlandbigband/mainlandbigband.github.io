@@ -3,7 +3,7 @@
     
     <section>
     <h2>Upcoming gigs:</h2>
-    {{ range where .Data.Pages.ByDate.Reverse "Date" ">=" now }}
+    {{ range where .Data.Pages.ByDate "Date" ">=" now }}
         {{ partial "gig.html" . }}
     {{ end }}
     </section>
