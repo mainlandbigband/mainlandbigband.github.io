@@ -8,7 +8,7 @@ date: 2017-07-24T21:18:01+12:00
     (03) 352-7362 or (021) 263-8303
 </address>
 <address>
-    <strong>Max Wright (Immediate Past President)</strong>
+    <strong>Max Wright (President)</strong>
     (03) 377-6542 or (027) 437-9351
 </address>
 <address>
