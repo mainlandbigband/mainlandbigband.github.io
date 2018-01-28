@@ -84,12 +84,14 @@
             <div id="headerCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     {{ with .Site.GetPage "section" "carousel" }}
+                        {{ $.Scratch.Set "setCarouselActive" true }}
                         {{ with .Resources.ByType "image" }}
                             {{ range . }}
                             {{ $scaled := .Fill "4320x1785 Top"}}
-                            <div class="carousel-item">
+                            <div class='carousel-item {{ if $.Scratch.Get "setCarouselActive"}}active{{ end }}'>
                                 <img class="d-block w-100" src="{{ $scaled.Permalink }}" alt="MBB">
                             </div>
+                            {{ $.Scratch.Set "setCarouselActive" false }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
@@ -151,10 +153,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function () {
-        $('#headerCarousel').find('.carousel-item').first().addClass('active');
-    });
-</script>
 </body>
 </html>
