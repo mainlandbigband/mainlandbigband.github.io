@@ -5,7 +5,7 @@ date: 2017-07-24T21:18:01+12:00
 
 <address>
     <strong>Terry McGowan (Musical Director)</strong>
-    (03) 352-7362 or (021) 263-8303
+    (021) 263-8303
 </address>
 <address>
     <strong>Max Wright (President)</strong>
