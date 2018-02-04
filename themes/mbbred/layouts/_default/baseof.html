@@ -87,7 +87,7 @@
                         {{ $.Scratch.Set "setCarouselActive" true }}
                         {{ with .Resources.ByType "image" }}
                             {{ range . }}
-                            {{ $scaled := .Fill "4320x1785 Top"}}
+                            {{ $scaled := .Fill "2160x892 Top"}}
                             <div class='carousel-item {{ if $.Scratch.Get "setCarouselActive"}}active{{ end }}'>
                                 <img class="d-block w-100" src="{{ $scaled.Permalink }}" alt="MBB">
                             </div>
@@ -97,7 +97,7 @@
                     {{ end }}
                 </div>
             </div>
-            <img class="logo" src="/assets/images/logo.png" alt="Logo">
+            <img class="logo" src="/assets/images/logo.svg" alt="Logo">
         </div>
     </div>
     <div class="row">
