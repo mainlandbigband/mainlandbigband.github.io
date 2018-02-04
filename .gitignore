@@ -1,1 +1,5 @@
 public/
+/resources/_gen/
+hugo.exe
+.idea/inspectionProfiles/
+.idea/workspace.xml
