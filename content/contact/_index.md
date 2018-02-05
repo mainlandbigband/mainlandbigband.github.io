@@ -2,6 +2,27 @@
 title: "Contact"
 date: 2017-07-24T21:18:01+12:00
 ---
+You can email us here, or get in touch by phone or post below.
+
+<form action="https://formspree.io/info@mainlandbigband.co.nz" method="POST">
+      <div class="form-group">
+            <label for="nameField">Your name:</label>
+            <input id="nameField" class="form-control" type="text" name="name" placeholder="Joseph Bloggs" required>
+      </div>
+      <div class="form-group">
+        <label for="emailField">Your email:</label>
+        <input id="emailField" class="form-control" type="email" name="_replyto" placeholder="joebloggs@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="messageField">Your message:</label>
+        <textarea id="messageField" class="form-control" name="message" placeholder="Your message" rows="3" required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New email from website" />
+      <input type="hidden" name="_next" value="//mainlandbigband.co.nz/contact/thanks.html" />
+      <input type="submit" value="Send">
+</form>
+
+
 
 <address>
     <strong>Terry McGowan (Musical Director)</strong>
