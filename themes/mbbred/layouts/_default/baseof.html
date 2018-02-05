@@ -61,6 +61,10 @@
             background-image: url("/assets/images/always-grey.png");
             /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
+        
+        .lazy-carousel-item {
+            display: none;
+        }
 
         a:hover {
             color: #d83f39;
@@ -92,17 +96,17 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+            <div id="headerCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
                 <div class="carousel-inner">
                     {{ with .Site.GetPage "section" "carousel" }}
-                        {{ $.Scratch.Set "setCarouselActive" true }}
+                        {{ $.Scratch.Set "firstCarouselImage" true }}
                         {{ with .Resources.ByType "image" }}
                             {{ range . }}
                             {{ $scaled := .Fill "2160x892 Top"}}
-                            <div class='carousel-item {{ if $.Scratch.Get "setCarouselActive"}}active{{ end }}'>
-                                <img class="d-block w-100" src="{{ $scaled.Permalink }}" alt="MBB">
+                            <div class='{{ if not ($.Scratch.Get "firstCarouselImage")}}lazy-{{ end }}carousel-item {{ if $.Scratch.Get "firstCarouselImage"}}active{{ end }}'>
+                                <img class="d-block w-100" {{ if not ($.Scratch.Get "firstCarouselImage")}}data-lazy-{{ end }}src="{{ $scaled.Permalink }}" alt="MBB">
                             </div>
-                            {{ $.Scratch.Set "setCarouselActive" false }}
+                            {{ $.Scratch.Set "firstCarouselImage" false }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
@@ -164,5 +168,20 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+<script>
+    window.addEventListener('load', function() {
+        document.querySelectorAll('.lazy-carousel-item img').forEach(function(image) {
+            var lazySrc = image.getAttribute('data-lazy-src');
+            if (lazySrc) {
+                image.setAttribute('src', lazySrc);
+                image.removeAttribute('data-lazy-src');
+                var classList = image.parentNode.classList;
+                classList.remove('lazy-carousel-item');
+                classList.add('carousel-item');
+                
+            }
+        });
+    })
+</script>
 </body>
 </html>
