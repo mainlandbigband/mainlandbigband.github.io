@@ -8,7 +8,8 @@ test:
 
 pages:
   script:
-  - hugo --buildFuture
+    - hugo --buildFuture
+    - find public -type f -iregex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -execdir gzip -f --keep {} \;
   artifacts:
     paths:
     - public
