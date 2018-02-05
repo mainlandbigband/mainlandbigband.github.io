@@ -10,8 +10,13 @@
 
     <section>
     <h2>Previous gigs:</h2>
-    {{ range where .Data.Pages.ByDate.Reverse "Date" "<" now }}
-    {{ partial "gig.html" . }}
+    {{ range (where .Data.Pages.ByDate.Reverse "Date" "<" now).GroupByDate "2006" }}
+        <section>
+            <h3>{{ .Key }}</h3>
+            {{ range .Pages }}
+                {{ partial "gig.html" . }}
+            {{ end }}
+        </section>            
     {{ end }}
     </section>
 {{ end }}
