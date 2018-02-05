@@ -18,7 +18,7 @@ You can email us here, or get in touch by phone or post below.
         <textarea id="messageField" class="form-control" name="message" placeholder="Your message" rows="3" required></textarea>
       </div>
       <input type="hidden" name="_subject" value="New email from website" />
-      <input type="hidden" name="_next" value="//mainlandbigband.co.nz/contact/thanks.html" />
+      <input type="hidden" name="_next" value="//mainlandbigband.co.nz/contact/thanks/" />
       <input type="submit" value="Send">
 </form>
 
