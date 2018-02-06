@@ -22,7 +22,19 @@ You can email us here, or get in touch by phone or post below.
       <input type="submit" value="Send">
 </form>
 
+Repertoire
+----------
+Whether you require background music to accompany a meal or cocktails, or the need to get those feet moving with dance music appropriate for the ages and tastes of your guests (or both), we can oblige. If we don’t already have a particular piece in our repertoire that you would like, we may be able to prepare it especially for you, providing we have sufficient notice.
 
+Affordability
+-------------
+Don’t think that a band this size might be too expensive - it’s NOT!
+
+Contact us now and find out just how affordable we are.
+
+We also make our own booking arrangements, hence...
+
+*NO AGENCY FEES*
 
 <address>
     <strong>Terry McGowan (Musical Director)</strong>
