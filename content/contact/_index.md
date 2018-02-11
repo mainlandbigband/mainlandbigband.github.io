@@ -36,6 +36,8 @@ We also make our own booking arrangements, hence...
 
 *NO AGENCY FEES*
 
+Phone
+-----
 <address>
     <strong>Terry McGowan (Musical Director)</strong>
     (021) 263-8303
@@ -44,8 +46,10 @@ We also make our own booking arrangements, hence...
     <strong>Max Wright (President)</strong>
     (03) 377-6542 or (027) 437-9351
 </address>
+
+Post
+----
 <address>
-    <strong>Post to:</strong><br>
     PO Box 10-052<br>
     Phillipstown<br>
     Christchurch<br>
