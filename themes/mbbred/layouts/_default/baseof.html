@@ -102,7 +102,7 @@
                             {{ range . }}
                             {{ $scaled := .Fill "2160x892 Top"}}
                             <div class='{{ if not ($.Scratch.Get "firstCarouselImage")}}lazy-{{ end }}carousel-item {{ if $.Scratch.Get "firstCarouselImage"}}active{{ end }}'>
-                                <img class="d-block w-100" {{ if not ($.Scratch.Get "firstCarouselImage")}}data-lazy-{{ end }}src="{{ $scaled.Permalink }}" alt="MBB">
+                                <img class="d-block w-100" {{ if not ($.Scratch.Get "firstCarouselImage")}}data-lazy-{{ end }}src="{{ $scaled.RelPermalink }}" alt="MBB">
                             </div>
                             {{ $.Scratch.Set "firstCarouselImage" false }}
                             {{ end }}
