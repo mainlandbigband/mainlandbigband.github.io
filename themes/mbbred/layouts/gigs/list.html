@@ -9,8 +9,8 @@
     </section>
 
     <section>
-    <h2>Previous gigs:</h2>
-    {{ range (where .Data.Pages.ByDate.Reverse "Date" "<" now).GroupByDate "2006" }}
+    <h2>Recent gigs:</h2>
+    {{ range first "2" ((where .Data.Pages.ByDate.Reverse "Date" "<" now).GroupByDate "2006") }}
         <section>
             <h3>{{ .Key }}</h3>
             {{ range .Pages }}
