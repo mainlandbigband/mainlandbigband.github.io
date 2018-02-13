@@ -15,11 +15,3 @@ pages:
     - public
   only:
   - master
-
-triggerWebhook:
-  stage: deploy
-  script:
-    - 'eval $POST_BUILD_WEBHOOK'
-  when: on_success
-  variables:
-      POST_BUILD_WEBHOOK: "true"
