@@ -7,6 +7,10 @@ test:
   - master
 
 pages:
+  - buildHugo
+  - triggerWebhook
+  
+buildHugo:
   script:
     - hugo --buildFuture
   artifacts:
@@ -14,3 +18,11 @@ pages:
     - public
   only:
   - master
+
+triggerWebhook:
+  script:
+    - $POST_BUILD_WEBHOOK
+  when:
+    - on_success
+  variables:
+    POST_BUILD_WEBHOOK: true
