@@ -100,9 +100,14 @@
                         {{ $.Scratch.Set "firstCarouselImage" true }}
                         {{ with .Resources.ByType "image" }}
                             {{ range . }}
-                            {{ $scaled := .Fill "2160x892 Top"}}
+                            {{ $scaledHi := .Fill "2160x892 Top"}}
+                            {{ $scaledMed := .Fill "1080x446 Top"}}
+                            {{ $scaledLo := .Fill "540x223 Top"}}
                             <div class='{{ if not ($.Scratch.Get "firstCarouselImage")}}lazy-{{ end }}carousel-item {{ if $.Scratch.Get "firstCarouselImage"}}active{{ end }}'>
-                                <img class="d-block w-100" {{ if not ($.Scratch.Get "firstCarouselImage")}}data-lazy-{{ end }}src="{{ $scaled.RelPermalink }}" alt="MBB">
+                                <img class="d-block w-100" 
+                                     {{ if not ($.Scratch.Get "firstCarouselImage")}}data-lazy-{{ end }}src="{{ $scaledMed.RelPermalink }}" 
+                                     {{ if not ($.Scratch.Get "firstCarouselImage")}}data-lazy-{{ end }}srcset="{{ $scaledLo.RelPermalink }} 540w, {{ $scaledMed.RelPermalink }} 1080w, {{ $scaledHi.RelPermalink }} 2160w" 
+                                    alt="MBB">
                             </div>
                             {{ $.Scratch.Set "firstCarouselImage" false }}
                             {{ end }}
@@ -165,9 +170,12 @@
     window.addEventListener('load', function() {
         document.querySelectorAll('.lazy-carousel-item img').forEach(function(image) {
             var lazySrc = image.getAttribute('data-lazy-src');
+            var lazySrcSet = image.getAttribute('data-lazy-srcset');
             if (lazySrc) {
                 image.setAttribute('src', lazySrc);
+                image.setAttribute('srcset', lazySrcSet);
                 image.removeAttribute('data-lazy-src');
+                image.removeAttribute('data-lazy-srcset');
                 var classList = image.parentNode.classList;
                 classList.remove('lazy-carousel-item');
                 classList.add('carousel-item');
