@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -57,7 +56,6 @@
         body {
             background-color: #b10f24;
             background-image: url("/assets/images/always-grey.png");
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
         
         .lazy-carousel-item {
@@ -70,14 +68,6 @@
 
         .footer * {
             vertical-align: sub;
-        }
-
-        .footer .contact-us {
-            color: #d83f39;
-        }
-
-        .footer .material-icons {
-            font-size: 36px;
         }
         
         body section {
@@ -154,7 +144,11 @@
                 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FMainlandBigBand%2F&width=62&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId"
                         width="62" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                         allowTransparency="true"></iframe>
-                <a class="contact-us" href="mailto:info@mainlandbigband.co.nz"><i class="material-icons md-48">email</i></a>
+                <a class="contact-us" href="mailto:info@mainlandbigband.co.nz">
+                    <svg fill="#d83f39" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg></a>
             </p>
         </div>
     </div>
