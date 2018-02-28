@@ -19,6 +19,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>{{ .Site.Title }}: {{ .Title }}</title>
+    <meta name="description" content="{{ index (split (.Summary | htmlEscape) ".") 0}}.">
 
     <style>
         .logo {
