@@ -9,18 +9,3 @@ sectionPagesMenu = "main"
     name = "About"
     url  = "/"
     weight = 1
-
-[outputs]
-home = [ "HTML", "RSS", "HEADERS" ]
-    
-[mediaTypes]
-[mediaTypes."text/netlify"]
-suffix = ""
-delimiter = ""
-
-[outputFormats]
-[outputFormats.HEADERS]
-mediatype = "text/netlify"
-baseName = "_headers"
-isPlainText = true
-notAlternative = true
