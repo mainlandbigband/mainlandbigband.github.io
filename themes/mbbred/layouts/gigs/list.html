@@ -1,11 +1,21 @@
 {{ define "main" }}
     {{ .Content }}
-    
+
+<style>
+    ol {
+        list-style-type: disc;
+    }
+    ol li {
+        list-style-position: outside;
+    }
+</style>
     <section>
-    <h2>Upcoming gigs:</h2>
-    {{ range where .Data.Pages.ByDate "Date" ">=" now }}
-        {{ partial "gig.html" . }}
-    {{ end }}
+        <h2>Upcoming gigs:</h2>
+        <ol>
+            {{ range where .Data.Pages.ByDate "Date" ">=" now }}
+                {{ partial "gig.html" . }}
+            {{ end }}
+        </ol>
     </section>
 
     <section>
@@ -13,9 +23,11 @@
     {{ range first "2" ((where .Data.Pages.ByDate.Reverse "Date" "<" now).GroupByDate "2006") }}
         <section>
             <h3>{{ .Key }}</h3>
-            {{ range .Pages }}
-                {{ partial "gig.html" . }}
-            {{ end }}
+            <ol>
+                {{ range .Pages }}
+                    {{ partial "gig.html" . }}
+                {{ end }}
+            </ol>
         </section>            
     {{ end }}
     </section>
