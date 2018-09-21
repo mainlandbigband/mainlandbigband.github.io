@@ -11,11 +11,16 @@
 </style>
     <section>
         <h2>Upcoming gigs:</h2>
-        <ol>
-            {{ range where .Data.Pages.ByDate "Date" ">=" now }}
+        {{ range ((where .Data.Pages.ByDate "Date" ">=" now).GroupByDate "2006").Reverse }}
+        <section>
+            {{ if ne .Key (dateFormat "2006" now) }}<h3>{{ .Key }}</h3>{{end}}
+            <ol>
+                {{ range .Pages.Reverse }}
                 {{ partial "gig.html" . }}
-            {{ end }}
-        </ol>
+                {{ end }}
+            </ol>
+        </section>
+        {{ end }}
     </section>
 
     <section>
