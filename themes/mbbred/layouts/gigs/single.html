@@ -1,0 +1,34 @@
+{{ define "main" }}
+<style>
+    .summary div {
+        display: table-row;
+    }
+    .summary div span {
+        display: table-cell;
+    }
+    .summary div span:first-child {
+        padding-right: 1em;
+        font-weight: bold;
+    }
+</style>
+<section class="summary">
+    <h2>Gig Details</h2>
+    <div>
+        <span>When:</span><span>{{.Date.Format "January 2, 3:04 PM"}}</span>
+    </div>
+    <div>
+        <span>Where:</span><span><a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a></span>
+    </div>
+    <div>
+        <span>Price:</span><span>${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }}</span>
+    </div>
+</section>
+<section>
+<h2>Gig Info</h2>
+{{ if ne (len .Content) 0}}
+{{ .Content }}
+{{else}}
+    Join the Mainland Big Band for an evening of rock, pop, ballads and jazz. Dancers and non-dancers are all welcome!
+{{end}}
+</section>
+{{ end }}
