@@ -1,4 +1,9 @@
 {{ define "main" }}
+{{ .Scratch.Set "description" "Join us for an evening of rock, pop, ballads and jazz. Dancers and non-dancers are all welcome!" }}
+{{ if ne (len .Content) 0}} {{ .Scratch.Set "description" .Content }} {{end}}
+{{ .Scratch.Set "description" (printf "%s %s" "If you are looking for music that you recognise and enjoy then the Mainland Big Band has it." (.Scratch.Get "description")) }}
+{{ $price := 10 }}
+{{ if isset .Params "price" }}{{ $price := (index .Params "price") }}{{ end }}
 <style>
     .summary div {
         display: table-row;
@@ -20,15 +25,44 @@
         <span>Where:</span><span><a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a></span>
     </div>
     <div>
-        <span>Price:</span><span>${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }}</span>
+        <span>Price:</span><span>${{ $price }}</span>
     </div>
 </section>
 <section>
 <h2>Gig Info</h2>
-{{ if ne (len .Content) 0}}
-{{ .Content }}
-{{else}}
-    Join the Mainland Big Band for an evening of rock, pop, ballads and jazz. Dancers and non-dancers are all welcome!
-{{end}}
+{{ safeHTML (.Scratch.Get "description")}}
 </section>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "The Mainland Big Band plays {{.Params.where}}",
+  "startDate": {{.Date.Format "2006-01-02T15:04:05-07:00" | jsonify}},
+  "location": {
+    "@type": "Place",
+    "name": "{{.Params.where}}",
+    {{ partial "gigpostal.html" . .Params.googleid }}
+  },
+  {{ .Scratch.Set "images" (slice "this element should be removed with 'after 1'") }}
+    {{ with .Site.GetPage "section" "carousel" }} {{ with .Resources.ByType "image" }}
+            {{ range . }} {{ $scaledHi := .Fill "2160x892 Top"}} {{ $.Scratch.Add "images" ($scaledHi.Permalink | jsonify)}}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    "image": [ {{ delimit (after 1 ($.Scratch.Get "images")) "," }}],
+  "description": "{{ replace ((.Scratch.Get "description") | plainify) "\n" " " }}",
+  "endDate": "{{.Date.Format "2006-01-02"}}",
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ $price }}",
+    "priceCurrency": "NZD",
+    "availability": "http://schema.org/InStock"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "The Mainland Big Band"
+  }
+}
+</script>
+
 {{ end }}

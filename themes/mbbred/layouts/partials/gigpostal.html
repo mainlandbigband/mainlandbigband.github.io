@@ -1,0 +1,9 @@
+{{ $place := index .Site.Data.places .Params.googleid }}
+"address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{$place.streetAddress | jsonify}},
+    "addressLocality": {{$place.addressLocality | jsonify}},
+    "postalCode": {{$place.postalCode | jsonify}},
+    "addressRegion": {{$place.addressRegion | jsonify}},
+    "addressCountry": {{$place.addressCountry | jsonify}}
+}

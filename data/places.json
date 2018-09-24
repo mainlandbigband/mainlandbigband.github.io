@@ -1,0 +1,30 @@
+{
+  "ChIJNX-lW6UgMm0R9d5y5Ot775I": {
+    "streetAddress": "50 Colombo St",
+    "addressLocality": "Somerfield",
+    "postalCode": "8022",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
+  },
+  "ChIJ7cDip1yLMW0RaRX3I6eaTjY": {
+    "streetAddress": "60 Cathedral Square",
+    "addressLocality": "Christchurch Central",
+    "postalCode": "8011",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
+  },
+  "ChIJPbkZdXz1MW0RCHl1T5Nu--Q": {
+    "streetAddress": "17 Carmen Road",
+    "addressLocality": "Hornby",
+    "postalCode": "8042",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
+  },
+  "ChIJ61BVoMWJMW0RihgZF3Jfkp4": {
+    "streetAddress": "43 Hargood St",
+    "addressLocality": "Woolston",
+    "postalCode": "8062",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
+  }
+}
