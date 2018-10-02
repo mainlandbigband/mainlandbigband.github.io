@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Christchurch, New Zealand"
 date: 2018-10-02T21:04:03+13:00
 ---
 
