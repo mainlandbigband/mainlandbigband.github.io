@@ -1,4 +1,4 @@
 <li>
-    {{.Date.Format "January 2, 3:04 PM"}}, <a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a>, ${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }}
+    <a href="{{.Permalink}}">{{.Date.Format "January 2, 3:04 PM"}}</a>, <a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a>, ${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }}
     {{ .Content }}
 </li>

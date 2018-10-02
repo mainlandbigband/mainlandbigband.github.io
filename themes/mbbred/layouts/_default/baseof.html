@@ -20,6 +20,7 @@
 
     <title>{{ .Site.Title }}: {{ .Title }}</title>
     <meta name="description" content="{{ index (split (.Summary | htmlEscape) ".") 0}}.">
+    <link rel="canonical" href="{{.Page.Permalink | absURL}}" />
 
     <style>
         .logo {
