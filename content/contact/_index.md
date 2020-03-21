@@ -40,11 +40,11 @@ Phone
 -----
 <address>
     <strong>Terry McGowan (Musical Director)</strong>
-    (021) 263-8303
+    <a href="tel:+64212638303">(021) 263-8303</a>
 </address>
 <address>
     <strong>Max Wright (President)</strong>
-    (03) 377-6542 or (027) 437-9351
+    <a href="tel:+6433776542">(03) 377-6542</a> or <a href="tel:+64274379351">(027) 437-9351</a>
 </address>
 
 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMainlandBigBand%20%20&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
