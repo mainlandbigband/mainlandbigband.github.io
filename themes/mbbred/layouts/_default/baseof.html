@@ -78,6 +78,10 @@
         form {
             margin-bottom: 2em;
         }
+        
+        p.cancelled {
+            text-decoration: line-through;
+        }
 
     </style>
 </head>
@@ -133,7 +137,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Next Gig</h2>
                     {{ range first 1 (where (where .Site.Pages "Section" "=" "gigs").ByDate "Date" ">=" now) }}
-                    <p class="card-text"><a href="{{.RelPermalink}}">{{.Date.Format "January 2, 3:04 PM"}}</a><br><a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a><br>${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }} entry<br>{{.Summary}}</p>
+                    <p class="card-text {{.Params.tags}}"><a href="{{.RelPermalink}}">{{.Date.Format "January 2, 3:04 PM"}}</a><br><a href="https://www.google.com/maps/place/?q=place_id:{{.Params.googleid}}">{{.Params.where}}</a><br>${{ if isset .Params "price" }}{{ index .Params "price" }}{{else}}10{{ end }} entry<br>{{.Content}}</p>
                     {{end}}
                 </div>
             </div>

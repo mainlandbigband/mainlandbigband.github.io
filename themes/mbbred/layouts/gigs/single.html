@@ -14,8 +14,12 @@
         padding-right: 1em;
         font-weight: bold;
     }
+    
+    .cancelled {
+        text-decoration: line-through;
+    }
 </style>
-<section class="summary">
+<section class="summary {{.Params.tags}}">
     <h2>Gig Details</h2>
     <div>
         <span>When:</span><span>{{.Date.Format "January 2, 3:04 PM"}}</span>
