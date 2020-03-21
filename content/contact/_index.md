@@ -1,8 +1,8 @@
 ---
 title: "Contact"
-date: 2017-07-24T21:18:01+12:00
+date: 2020-03-21T14:16:01+13:00
 ---
-You can email us here, or get in touch by phone or post below.
+You can email us here, or find out how to get in touch by phone below.
 
 <form action="https://formspree.io/info@mainlandbigband.co.nz" method="POST">
       <div class="form-group">
@@ -45,15 +45,6 @@ Phone
 <address>
     <strong>Max Wright (President)</strong>
     (03) 377-6542 or (027) 437-9351
-</address>
-
-Post
-----
-<address>
-    PO Box 10-052<br>
-    Phillipstown<br>
-    Christchurch<br>
-    New Zealand
 </address>
 
 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMainlandBigBand%20%20&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
