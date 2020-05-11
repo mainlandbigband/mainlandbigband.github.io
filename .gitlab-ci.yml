@@ -16,7 +16,7 @@ pages:
   only:
   - master
 
-  Scheduled deploy to Netlify:
+netlify:
    image: alpine
    only:
      - schedules
