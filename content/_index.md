@@ -9,5 +9,5 @@ We are a dedicated team of up to 17 musicians who rehearse weekly under the dire
 
 If you would like to hire us for your event, please do get in touch with us using the details on our [contact](/contact) page</a>. We would be happy to tailor an event to your specific requirements!
 
-# We're back!
-Our gig programme resumes post-Covid starting with our July 4 gig. Please come and join us!
+# September gig cancelled
+This gig has been cancelled due to COVID-19 Level Two restrictions. We hope to be back next month!
