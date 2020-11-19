@@ -33,5 +33,12 @@
     "postalCode": "8011",
     "addressRegion": "Christchurch",
     "addressCountry": "NZ"
+  },
+  "ChIJbd8qcD-KMW0RGnTFw1Sud7M": {
+    "streetAddress": "Rolleston Avenue",
+    "addressLocality": "Christchurch Central",
+    "postalCode": "8013",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
   }
 }
