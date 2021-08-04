@@ -1,6 +1,6 @@
 ---
 title: "Players Wanted"
-date: 2020-11-29T21:36:03+13:00
+date: 2021-08-04T23:14:03+12:00
 ---
 The Mainland Big Band is a long-established, 19-piece, Christchurch dance band with a large and very varied repertoire ranging from Big Band and jazz standards to rock and pop. The Band rehearses weekly on Wednesday evenings and performs publicly at least once per month. Note that our positions are _voluntary_ -- for the majority of members the Band is a sideline and not a career.
 
@@ -10,16 +10,6 @@ We require our players to be a good team members, be prepared to attend regular 
 
 <br>
 
-Keyboard Player Wanted
---------------
-The band is looking for someone to replace their retiring keyboardist. Skills required are the ability to read music, (bass and treble clef—up to Grade 5 would probably be adequate) as well as to play from a chord chart. Experience in a large band would be an advantage as would experience playing ‘keyboard’ style.
-
-The band offers the use of its own, almost new Roland digital stage piano ([RD-2000](https://www.roland.com/GLOBAL/products/rd-2000/)), a friendly and supportive atmosphere, and the company of an eclectic group of musicians for whom music is a much-loved hobby.
-
-<br>
-
 Saxophone Players Wanted
 -----------------
-The band is in need of more saxophones, particularly tenors, to join its reed section.
-
-The band has a tenor sax that any new band member would be able to use. 
+The band is in need of more saxophones to join its reed section.
