@@ -5,7 +5,7 @@ import {
 } from "https://deno.land/std@0.78.0/fs/mod.ts";
 import { format } from 'https://deno.land/std/datetime/mod.ts'
 
-const year = 2021;
+const year = 2022;
 ensureDirSync(`./content/gigs/${year}`);
 function firstDayInMonth(day: number, month: number, year: number, hour: number, minute: number) {
     const date = new Date();
