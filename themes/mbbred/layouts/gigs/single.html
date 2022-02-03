@@ -33,7 +33,11 @@
 </section>
 <section>
 <h2>Gig Info</h2>
+    {{ if (isset .Params "tags") and (in (.Params "tags") "cancelled") }}
+        {{ safeHTML .Content }}
+    {{ else }}
 {{ safeHTML (.Scratch.Get "description")}}
+    {{ end }}
 </section>
 <script type="application/ld+json">
 {
@@ -46,13 +50,6 @@
     "name": "{{.Params.where}}",
     {{ partial "gigpostal.html" . .Params.googleid }}
   },
-  {{ .Scratch.Set "images" (slice "this element should be removed with 'after 1'") }}
-    {{ with .Site.GetPage "section" "carousel" }} {{ with .Resources.ByType "image" }}
-            {{ range . }} {{ $scaledHi := .Fill "2160x892 Top"}} {{ $.Scratch.Add "images" ($scaledHi.Permalink | jsonify)}}
-            {{ end }}
-        {{ end }}
-    {{ end }}
-    "image": [ {{ delimit (after 1 ($.Scratch.Get "images")) "," }}],
   "description": "{{ replace ((.Scratch.Get "description") | plainify) "\n" " " }}",
   "endDate": "{{.Date.Format "2006-01-02"}}",
   "offers": {
