@@ -9,5 +9,7 @@ We are a dedicated team of up to 17 musicians who rehearse weekly under the dire
 
 If you would like to hire us for your event, please do get in touch with us using the details on our [contact](/contact) page</a>. We would be happy to tailor an event to your specific requirements!
 
+Under the traffic light system, we are able to perform under levels GREEN and ORANGE. Gigs will not go ahead under the RED level.
+
 # Players Wanted
 Are you a musician and would you like to join us? Please take a look at our [Players Wanted]({{< relref "players-wanted" >}}) page.
