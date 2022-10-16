@@ -40,5 +40,12 @@
     "postalCode": "8013",
     "addressRegion": "Christchurch",
     "addressCountry": "NZ"
+  },
+  "ChIJQSnDmDOLMW0RF3ge9fYiIbw": {
+    "streetAddress": "3370753",
+    "addressLocality": "Christchurch Central",
+    "postalCode": "8011",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
   }
 }
