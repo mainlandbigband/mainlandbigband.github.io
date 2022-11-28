@@ -6,10 +6,15 @@ The Mainland Big Band is a long-established, 19-piece, Christchurch dance band w
 
 We require our players to be a good team members, be prepared to attend regular rehearsals and be available for performances (allowances are, of course, always made for sickness, holidays, family birthdays, anniversaries etc!)
 
-##### If you would like more information about the vacancies below please phone 027 229 1038 or email <info@mainlandbigband.co.nz>
+##### If you would like more information about the vacancies below please phone Colin on 027 441 1490 or email <info@mainlandbigband.co.nz>
 
 <br>
 
 Saxophone Players Wanted
 -----------------
 The band is in need of more saxophones to join its reed section.
+
+
+Trombone Players Wanted
+-----------------
+The band is in need of another trombonist. Experience reading treble clef would be helpful, but we can teach you how if you can't already!
