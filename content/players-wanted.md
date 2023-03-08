@@ -15,6 +15,6 @@ Saxophone Players Wanted
 The band is in need of more saxophones to join its reed section.
 
 
-Trombone Players Wanted
+Drummer Wanted
 -----------------
-The band is in need of another trombonist. Experience reading treble clef would be helpful, but we can teach you how if you can't already!
+The band is in need of a new drummer to join its rhythm section.
