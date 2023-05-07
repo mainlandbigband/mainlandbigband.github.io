@@ -10,11 +10,6 @@ We require our players to be a good team members, be prepared to attend regular 
 
 <br>
 
-Saxophone Players Wanted
------------------
-The band is in need of more saxophones to join its reed section.
-
-
 Drummer Wanted
 -----------------
 The band is in need of a new drummer to join its rhythm section.
