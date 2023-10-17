@@ -47,5 +47,19 @@
     "postalCode": "8011",
     "addressRegion": "Christchurch",
     "addressCountry": "NZ"
+  },
+  "ChIJrSTbF0CLMW0RfKhojQI8NEE": {
+    "streetAddress": "96 Oxford Terrace",
+    "addressLocality": "Christchurch Central",
+    "postalCode": "8011",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
+  },
+  "ChIJ6StWnxeKMW0RlALBmnQ38kA": {
+    "streetAddress": "579 Colombo Street",
+    "addressLocality": "Christchurch Central City",
+    "postalCode": "8011",
+    "addressRegion": "Christchurch",
+    "addressCountry": "NZ"
   }
 }
