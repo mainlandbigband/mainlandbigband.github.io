@@ -1,7 +1,6 @@
 ---
 title: "Christchurch, New Zealand"
 date: 2023-05-07T17:41:03+12:00
-hero: christmas2023.png
 ---
 
 The Mainland Big Band is a very experienced dance band with a long history of music-making in Christchurch and the Canterbury region. We perform regularly across the region, as well as for private weddings, receptions and large formal, corporate dinner-dances.
