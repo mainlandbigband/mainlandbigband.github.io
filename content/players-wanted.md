@@ -10,6 +10,6 @@ We require our players to be a good team members, be prepared to attend regular 
 
 <br>
 
-Drummer Wanted
+Pianist Wanted
 -----------------
-The band is in need of a new drummer to join its rhythm section.
+The band is in need of a new pianist  to join its rhythm section.
