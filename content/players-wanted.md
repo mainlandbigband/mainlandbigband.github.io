@@ -12,8 +12,4 @@ We require our players to be a good team members, be prepared to attend regular 
 
 Pianist Wanted
 -----------------
-The band is in need of a new pianist  to join its rhythm section.
-
-Trombonist Wanted
------------------
-The band is in need of more players to join it's trombone section.
+The band is in need of a new pianist to join its rhythm section.
