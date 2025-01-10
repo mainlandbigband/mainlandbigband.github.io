@@ -1,14 +1,11 @@
-// Run with Deno
-// deno.exe --unstable run --allow-read --allow-write gigGenerator.ts
-import {
-    ensureDirSync,
-} from "https://deno.land/std@0.78.0/fs/mod.ts";
-import { format } from 'https://deno.land/std/datetime/mod.ts'
+// Run with Node
 
-const year = 2022;
-ensureDirSync(`./content/gigs/${year}`);
+import {mkdirSync, writeFileSync} from 'fs';
+
+const year = 2025;
+mkdirSync(`./content/gigs/${year}`, { recursive: true });
 function firstDayInMonth(day: number, month: number, year: number, hour: number, minute: number) {
-    const date = new Date();
+    const date = new Date(0);
     date.setFullYear(year);
     date.setMonth(month-1);
     date.setHours(hour, minute, 0, 0);
@@ -24,7 +21,7 @@ function firstDayInMonth(day: number, month: number, year: number, hour: number,
 
 const where = 'Cashmere Club';
 const googleid = 'ChIJNX-lW6UgMm0R9d5y5Ot775I';
-for (let i = 1; i < 12; i++) {
+for (let i = 1; i <= 12; i++) {
     const firstSat = firstDayInMonth(6, i, year, 19, 30);
     const padMonth = (firstSat.getMonth() + 1).toString().padStart(2, '0');
     const padDate = firstSat.getDate().toString().padStart(2, '0');
@@ -35,6 +32,6 @@ where: ${where}
 googleid: ${googleid}
 ---`;
 
-    
-    Deno.writeTextFileSync(`./content/gigs/${year}/${padMonth}-${padDate}.md`, template)
+
+    writeFileSync(`./content/gigs/${year}/${padMonth}-${padDate}.md`, template)
 }
