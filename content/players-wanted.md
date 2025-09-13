@@ -10,8 +10,4 @@ We require our players to be a good team members, be prepared to attend regular 
 
 <br>
 
-Saxophone Players Wanted
------------------
-The band is in need of more saxophones, particularly tenors, to join its reed section.
-
-The band has a tenor sax that any new band member would be able to use.
+No current vacancies.
