@@ -10,14 +10,6 @@ We require our players to be a good team members, be prepared to attend regular 
 
 <br>
 
-Keyboard Player Wanted
---------------
-The band is looking for someone to replace their retiring keyboardist. Skills required are the ability to read music, (bass and treble clef—up to Grade 5 would probably be adequate) as well as to play from a chord chart. Experience in a large band would be an advantage as would experience playing ‘keyboard’ style.
-
-The band offers the use of its own, almost new Roland digital stage piano ([RD-2000](https://www.roland.com/GLOBAL/products/rd-2000/)), a friendly and supportive atmosphere, and the company of an eclectic group of musicians for whom music is a much-loved hobby.
-
-<br>
-
 Saxophone Players Wanted
 -----------------
 The band is in need of more saxophones, particularly tenors, to join its reed section.
