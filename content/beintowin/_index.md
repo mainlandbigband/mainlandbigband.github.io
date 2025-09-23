@@ -44,7 +44,7 @@ Sign up to our mailing list to win a double pass to our 1&nbsp;November gig. Ent
               </div>
 
 
-<div class="ml-form-recaptcha ml-validate-required" style="float: left;">
+<div class="ml-form-recaptcha ml-validate-required clearfix">
                 <style type="text/css">
   .ml-form-recaptcha {
     margin-bottom: 20px;
