@@ -1,10 +1,14 @@
 ---
-title: "Be Into Win"
-date: 2025-09-23T20:33:01+12:00
+title: "Win a Night with the Mainland Big Band!"
+date: 2025-10-23T19:08:01+13:00
 ---
-Be in to win!
+Win a Night with the Mainland Big Band!
 =============
-Sign up to our mailing list to win a double pass to our 1&nbsp;November gig. Entries must be in by 31 October&nbsp;2025.
+Sign up to our mailing list and go in the draw to win a double pass to our live show at the Cashmere Club, a night of swing, Latin grooves, and classic waltzes. Experience the full big band sound that’ll get you dancing!
+
+**Cashmere Club | Friday, 1 November 2025 | 7:30 PM | $10 pp**
+
+Entries close 31 October 2025. Sign up now and be ready to jive!
 
 {{< rawhtml >}}
 <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1758539");</style>
