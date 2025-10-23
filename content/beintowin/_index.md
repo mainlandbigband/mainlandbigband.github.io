@@ -1,5 +1,5 @@
 ---
-title: "Win a Night with the Mainland Big Band!"
+title: "Competition"
 date: 2025-10-23T19:08:01+13:00
 ---
 Win a Night with the Mainland Big Band!
