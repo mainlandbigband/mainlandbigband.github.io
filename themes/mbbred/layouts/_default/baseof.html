@@ -83,6 +83,11 @@
             text-decoration: line-through;
         }
 
+        img.hero {
+            max-width: 100%;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -131,7 +136,7 @@
     <div class="row">
         <div class="col-md-12 text-center pb-3">
             {{ with .Resources.GetMatch (index .Params "hero") }}
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="hero">
             {{ end }}
         </div>
     </div>
