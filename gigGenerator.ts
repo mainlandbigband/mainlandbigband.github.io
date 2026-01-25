@@ -2,7 +2,7 @@
 
 import {mkdirSync, writeFileSync} from 'fs';
 
-const year = 2025;
+const year = 2026;
 mkdirSync(`./content/gigs/${year}`, { recursive: true });
 function firstDayInMonth(day: number, month: number, year: number, hour: number, minute: number) {
     const date = new Date(0);
