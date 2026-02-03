@@ -21,7 +21,7 @@
     <title>{{ .Site.Title }}: {{ .Title }}</title>
     <meta name="description" content="{{ index (split (.Summary | htmlEscape) ".") 0}}.">
     <link rel="canonical" href="{{.Page.Permalink | absURL}}" />
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld7WVgsAAAAAPMKu4Qi7xPjw0WGiMSojzf3uuz3"></script>
+
     <style>
         .logo {
             position: absolute;
@@ -167,7 +167,7 @@
 
                                 <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
 
-                                    <form id="giglist-form" class="ml-block-form" action="https://assets.mailerlite.com/jsonp/836428/forms/120657762082359249/subscribe" data-code="" method="post" target="_blank">
+                                    <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/836428/forms/120657762082359249/subscribe" data-code="" method="post" target="_blank">
                                         <div class="ml-form-formContent">
                                             <div class="ml-form-fieldRow ml-last-item">
                                                 <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
@@ -178,12 +178,37 @@
                                             </div>
                                         </div>
 
+                                        <div class="ml-form-recaptcha ml-validate-required clearfix">
+                                            <style type="text/css">
+                                                .ml-form-recaptcha {
+                                                    margin-bottom: 20px;
+                                                }
+
+                                                .ml-form-recaptcha.ml-error iframe {
+                                                    border: solid 1px #ff0000;
+                                                }
+
+                                                @media screen and (max-width: 480px) {
+                                                    .ml-form-recaptcha {
+                                                        width: 220px!important
+                                                    }
+                                                    .g-recaptcha {
+                                                        transform: scale(0.78);
+                                                        -webkit-transform: scale(0.78);
+                                                        transform-origin: 0 0;
+                                                        -webkit-transform-origin: 0 0;
+                                                    }
+                                                }
+                                            </style>
+                                            <script src="https://www.google.com/recaptcha/api.js"></script>
+                                            <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+                                        </div>
+
                                         <input type="hidden" name="ml-submit" value="1">
 
                                         <div class="ml-form-embedSubmit">
 
-                                            <button class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD" data-callback='onSubmit'
-                                                    data-action='submit' type="submit">Subscribe</button>
+                                            <input type="submit" value="Subscribe"/>
 
                                         </div>
 
@@ -260,11 +285,7 @@
                 
             }
         });
-    });
-
-    function onSubmit(token) {
-        document.getElementById("giglist-form").submit();
-    }
+    })
 </script>
 </body>
 </html>
