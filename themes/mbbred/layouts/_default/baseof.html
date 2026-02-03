@@ -167,7 +167,7 @@
 
                                 <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
 
-                                    <form id="giglist-form" class="ml-block-form" action="contact/javascriptrequired" data-code="" method="post" target="_blank">
+                                    <form id="giglist-form" class="ml-block-form" action="https://assets.mailerlite.com/jsonp/836428/forms/120657762082359249/subscribe" data-code="" method="post" target="_blank">
                                         <div class="ml-form-formContent">
                                             <div class="ml-form-fieldRow ml-last-item">
                                                 <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
@@ -182,11 +182,8 @@
 
                                         <div class="ml-form-embedSubmit">
 
-                                            <div class="form-group">
-                                                <div id="cf-turnstile"></div>
-                                            </div>
-
-                                            <input type="submit" value="Subscribe"/>
+                                            <button class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD" data-callback='onSubmit'
+                                                    data-action='submit' type="submit">Subscribe</button>
 
                                         </div>
 
@@ -246,7 +243,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha256-uz0BcnPtSHZ02XZthAHPRYIoWWrcwMOmAk9ErnFQkNs=" crossorigin="anonymous"></script>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+
 <script>
     window.addEventListener('load', function() {
         document.querySelectorAll('.lazy-carousel-item img').forEach(function(image) {
@@ -265,14 +262,9 @@
         });
     });
 
-    turnstile.ready(function () {
-        turnstile.render('#cf-turnstile', {
-            sitekey: '0x4AAAAAAAWYuJvt7r8iZbdK',
-            callback: function() {
-                document.getElementById('giglist-form').action = 'https://assets.mailerlite.com/jsonp/836428/forms/120657762082359249/subscribe';
-            },
-        });
-    });
+    function onSubmit(token) {
+        document.getElementById("giglist-form").submit();
+    }
 </script>
 </body>
 </html>
