@@ -4,6 +4,8 @@ weight: 20
 summary: "Acquiring our own hall on Aldwins Road and transitioning into a structured dance band named the Garden City Big Band."
 ---
 
+{{< history_nav >}}
+
 In 1974 D.I. Williams retired from being M.D. To acknowledge his 21 years of continuous service as conductor of the Band of the Canterbury Regiment, the Band of the Royal NZ Infantry Regiment and the Christchurch Garrison Band, members Mr and Mrs Clayton presented a trophy in his name to the Band as an annual award for services to the Band. The D.I. Williams trophy is still awarded annually.
 
 The position of conductor was filled by Terry McGowan who had for some years been Drum Major. His appointment as Musical Director was confirmed in May 1976. In 1981 D.I. Williams resigned as Assistant Conductor and the role was taken over by Andy Simmonds.

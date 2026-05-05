@@ -4,6 +4,8 @@ weight: 50
 summary: "Enduring the Canterbury earthquakes, moving to new premises, and continuing to perform up to the present day."
 ---
 
+{{< history_nav >}}
+
 The earthquakes of 2010 and 2011 changed everything. Many performance venues were lost, people left town, band members were coping with their own stresses and the band lost its hall. Damage from the initial earthquake of September 2010 was not too serious and the band continued using the hall after the central wall was reinforced, however the February 2011 earthquake was too much for this old double-brick building, and it was 'red-stickered'. Stan Ainsworth kindly offered the band use of his show room (Alvista Interiors) in the depths of Woolston/Heathcote for rehearsals. He also allowed the Band to park several large shipping containers in the carpark for equipment and as much of the interior fittings as could be rescued from the hall. The idea was to onsell the almost-new appliances and fittings to recoup some costs. However, the market was flooded at the time with all sorts of building supplies, fittings and furnishings as more and more properties, commercial and domestic, were being demolished. In the end some items had to be given away!
 
 Surprisingly, despite the distance and inconvenience, all members of the band accepted the new venue and were really grateful for the comfortable facilities, and it was good for morale to be able to continue with rehearsals.

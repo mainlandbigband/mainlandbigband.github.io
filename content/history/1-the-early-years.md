@@ -4,6 +4,8 @@ weight: 10
 summary: "The formation of the band from a military ensemble, early performances, and massive fundraising efforts."
 ---
 
+{{< history_nav >}}
+
 It all began in 1964 when the NZ Army was reorganised. New conditions of service meant that some of the bandsmen of the Canterbury Regiment could not carry on because of age, health or other issues. Rather than leave behind the musicianship and camaraderie that they had enjoyed, a group of them formed a new civilian band, still under the baton of their former Musical Director, Dafyd Williams.
 
 The group planned to equip itself with full-dress scarlet uniforms and instruments as previously but with the addition of reed instruments. In the end they decided on a modern style uniform with scarlet tunic and navy trousers with a scarlet stripe. Right from the start the band had been playing in low pitch and with the view of having at least six clarinets and one or two saxophones. The use of reed instruments made the band unique in the South Island and was one of only five such bands in New Zealand. The addition of reeds gave the band a softer sound and also enabled it to play music written for American marching bands. The group was supported by a large number of associate members - friends, family and other supporters and local dignitaries - who assisted the band with fundraising and social activities. By the end of the first year there were 45 active (playing) members and 66 non-playing (associate) members.

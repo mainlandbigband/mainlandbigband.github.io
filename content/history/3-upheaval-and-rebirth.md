@@ -4,6 +4,8 @@ weight: 30
 summary: "Navigating through turbulent times in the 1990s, changing directors, and registering formally as Mainland Big Band Inc."
 ---
 
+{{< history_nav >}}
+
 Terry resigned as Musical Director in early 1990 because of pressure of work but stayed on as drummer. He had already been involved with the St Josephs Light Operatic Society and had been offered the opportunity to be Musical Director for Canterbury Opera (), consequently the band was searching for a new leader.
 
 There followed a period of huge upheaval and dissension. Several appointments were made but for various reasons the incumbents couldn’t stay. The appointment of ex-Army band musician Brian Hodges as M.D. promised great things and certainly it all started well. Unfortunately it didn’t work out and although the band’s sound improved, morale did not and a great number of long-standing members resigned. By late 1991 band members were asking for him not to be re-appointed. His appointment was finally terminated in 1992. To compound the frustration and low morale of the band members, Brian Hodges and his supporters (who had all been new recruits under his direction), on resigning from the then ‘Garden City Big Band’ formed a band of their own and being aware that the name was not officially registered but just a stage name, registered it for themselves. All steps that the Band took to reclaim its name failed. The original band members re-grouped and at a special AGM in March 1993 registered the band as the ‘Mainland Big Band Inc’
