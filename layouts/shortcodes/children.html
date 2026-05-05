@@ -1,0 +1,12 @@
+﻿<div class="children-list">
+  <ul>
+    {{ range .Page.Pages.ByWeight }}
+      <li>
+        <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+        {{ if .Summary }}
+          <br>{{ .Summary | plainify | truncate 150 }}
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</div>

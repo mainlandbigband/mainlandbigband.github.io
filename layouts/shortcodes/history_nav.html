@@ -1,0 +1,18 @@
+
+<hr style="margin-top: 3rem; border: 0; border-top: 1px solid #ddd;">
+<div class="history-nav" style="background: rgba(0,0,0,0.03); padding: 1.5rem; border-radius: 5px;">
+  <h4 style="margin-top: 0;">History Chapters</h4>
+  {{ $history := .Site.GetPage "history" }}
+  <ol style="margin-bottom: 1rem; padding-left: 1.5rem;">
+    {{ range $history.Pages.ByWeight }}
+      <li style="margin-bottom: 0.5rem;">
+        {{ if eq .RelPermalink $.Page.RelPermalink }}
+          <strong>{{ .Title }}</strong> <em>(Current)</em>
+        {{ else }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ol>
+  <a href="/history/"><strong>&larr; Back to History Index</strong></a>
+</div>
