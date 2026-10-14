@@ -1,6 +1,6 @@
 ---
 title: "Christchurch, New Zealand"
-date: 2025-12-07T12:51:03+13:00
+date: 2026-10-14T14:16:03+13:00
 ---
 
 The Mainland Big Band is a very experienced dance band with a long history of music-making in Christchurch and the Canterbury region. We perform regularly across the region, as well as for private weddings, receptions and large formal, corporate dinner-dances.
@@ -8,6 +8,13 @@ The Mainland Big Band is a very experienced dance band with a long history of mu
 We are a dedicated team of up to 19 musicians who rehearse weekly under the direction of a talented Musical Director. We have a constantly-expanding repertoire, and as we celebrated our 60th anniversary in 2024, we are well-equipped to help you plan a programme to suit your particular needs. 
 
 If you would like to hire us for your event, please do get in touch with us using the details on our [contact](/contact) page</a>. We would be happy to tailor an event to your specific requirements!
+
+{{< figure
+src="bbf2026.jpg"
+alt="BBF 2026 Gigs"
+link="/gigs/"
+width="100%"
+>}}
 
 # Players Wanted
 Are you a musician and would you like to join us? Please take a look at our [Players Wanted]({{< relref "players-wanted" >}}) page.
